@@ -1,0 +1,143 @@
+/* ...existing styles... */
+
+.story-author-byline {
+  font-size: 2rem; /* Increased to 2rem as requested */
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .story-author-byline {
+    font-size: 1.5rem; /* Adjusted for mobile proportion */
+  }
+}
+
+/* ...existing styles... */
+/* ...existing styles... */
+
+/* Styling for the story header with title and author */
+.story-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Increased gap between title and author */
+}
+
+.story-author-byline {
+  font-size: 1.4rem; /* Increased from 1rem */
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: normal;
+  margin-top: 5px; /* Add some space above */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .story-author-byline {
+    font-size: 1.2rem; /* Increased from 0.9rem for mobile */
+  }
+}
+
+/* ...existing styles... */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Make sure content is visible */
+  color: #333;
+  background-color: #f7f9fc;
+}
+
+.App-header {
+  background-color: #4CAF50;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  /* Ensure visibility */
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Add a visible border to main content for debugging */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px dashed #ccc;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.clickable-title {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.clickable-title:hover {
+  text-decoration: underline;
+}
+
+.clickable-title:active {
+  top: 1px;
+}
+
+/* Styling for the story header with title and author */
+.story-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.story-author-byline {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .story-author-byline {
+    font-size: 0.9rem;
+  }
+}

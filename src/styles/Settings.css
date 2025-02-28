@@ -1,0 +1,249 @@
+.settings-page {
+  max-width: 1200px; /* Increased from 800px to match story-reader */
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.settings-page h2 {
+  color: #4CAF50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.settings-section {
+  margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.setting-item {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.setting-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.setting-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.setting-control {
+  display: flex;
+  align-items: center;
+  min-width: 160px;
+  justify-content: flex-end;
+}
+
+.size-btn {
+  background-color: #e0e0e0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.size-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.size-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.size-value {
+  margin: 0 15px;
+  min-width: 50px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.text-preview {
+  flex-basis: 100%;
+  margin-top: 15px;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Fixed height container to prevent layout shifts */
+.settings-message-container {
+  height: 50px; /* Fixed height for the message area */
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.settings-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.3s, fadeOut 0.3s 2s forwards;
+}
+
+/* Animation for message appearance/disappearance */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.back-btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0b7dda;
+}
+
+/* Add styles for the font selector */
+.font-select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 0.9rem;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.font-select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* New layout styles */
+.settings-layout {
+  display: flex;
+  gap: 40px; /* Slightly increased gap */
+  margin-bottom: 30px;
+  max-width: 1000px; /* Add a max-width to keep content from stretching too much */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.settings-column {
+  flex: 1;
+}
+
+.preview-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  background-color: #f0f0f0; /* Light gray background similar to reading area */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Remove the preview-header as it doesn't exist in the reader */
+.preview-header {
+  display: none;
+}
+
+.combined-text-preview {
+  position: relative;
+  max-width: 80%;
+  width: 600px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  min-height: auto; /* Remove fixed height */
+}
+
+.combined-text-preview p {
+  margin: 8px 0;
+  text-align: center; /* Center the text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .setting-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .setting-info {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .setting-control {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .settings-layout {
+    flex-direction: column;
+  }
+
+  .preview-column {
+    margin-top: 20px;
+  }
+}
