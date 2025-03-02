@@ -2,6 +2,17 @@
 
 Story Time is an interactive reading app designed for kids. Create, read, and share engaging stories with a modern, customizable reading experience.
 
+## UI Screenshots
+
+### Home Page
+![Home Page](./screenshots/home-page.png)
+
+### Create Story
+![Create Story](./screenshots/create-story.png)
+
+### Write a Story
+![Write a Story](./screenshots/write-story.png)
+
 ## Features
 
 - **Interactive Reading:** Navigate stories via clicks/taps and keyboard arrow keys.
