@@ -5,6 +5,8 @@ import StoryUploader from './StoryUploader';
 import StoryReader from './StoryReader';
 import StoryList from './StoryList';
 import Settings from './Settings';
+import StoryGenerator from './StoryGenerator';
+import FileUploader from './FileUploader'; // Import the new FileUploader component
 import { TitleContext } from '../contexts/TitleContext';
 
 function App() {
@@ -41,6 +43,7 @@ function App() {
           <nav>
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/upload" className="nav-link">Create Story</Link>
+            <Link to="/file-upload" className="nav-link">Add File</Link> {/* New navigation link */}
             <Link to="/settings" className="nav-link">Settings</Link>
           </nav>
         )}
@@ -54,6 +57,8 @@ function App() {
           <Route path="/edit/:storyId" element={<StoryUploader />} />
           <Route path="/read/:storyId" element={<StoryReader />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/generate" element={<StoryGenerator />} />
+          <Route path="/file-upload" element={<FileUploader />} /> {/* New route */}
         </Routes>
       </main>
       

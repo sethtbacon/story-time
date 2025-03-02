@@ -5,6 +5,9 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   position: relative;
   z-index: 10;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .story-uploader h2 {
@@ -148,14 +151,11 @@ button {
 }
 
 .error-message {
-  background-color: #ffecec;
-  color: #f44336;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  border: 1px solid #f44336;
-  text-align: center;
-  font-weight: bold;
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 10px 0;
 }
 
 .size-tip {
@@ -284,4 +284,203 @@ button {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.uploader-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.story-form {
+  background-color: #fff
+}
+
+.option-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Story Creator Options */
+.story-creator-options {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.story-creator-options h2 {
+  margin-bottom: 2rem;
+  color: #4CAF50;
+}
+
+.creation-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: 240px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.option-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: #4CAF50;
+}
+
+.option-button svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.option-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.option-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: 15px;
+}
+
+.create-option svg {
+  color: #4CAF50;
+}
+
+.upload-option svg {
+  color: #2196F3;
+}
+
+.generate-option svg {
+  color: #FF9800;
+}
+
+/* File Upload Mode */
+.upload-mode {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.upload-instructions {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.upload-instructions h3 {
+  color: #4CAF50;
+  margin-top: 0;
+}
+
+.json-example {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  border: 3px dashed #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #4CAF50;
+  background-color: #f5f5f5;
+}
+
+.upload-area svg {
+  width: 60px;
+  height: 60px;
+  color: #757575;
+  margin-bottom: 15px;
+}
+
+.upload-text {
+  color: #757575;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.upload-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.back-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Uploader Header */
+.uploader-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
 }

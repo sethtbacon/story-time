@@ -8,6 +8,7 @@ Story Time is an interactive reading app designed for kids. Create, read, and sh
 - **Customizable Settings:** Adjust text size and choose from multiple fonts. Preferences are stored in localStorage.
 - **Story Management:** Create, edit, delete, and download storybooks.
 - **JSON Story Schema:** Stories are stored as JSON. See [story-schema.json](./story-schema.json) for details.
+- **AI Story Generator:** Generate new stories using AI. Customize the generated content to fit your needs.
 
 ## JSON Story Schema
 
